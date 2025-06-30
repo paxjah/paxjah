@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-image: url('https://paxjah.art/tile.png');
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+.screen-reader-text {
+    position: absolute;
+    left: -9999px;
+}
+
+header, section, footer {
+    margin: 0;
+    width: 600px;
+    max-width: 90%;
+    background: #fff;
+    padding: 0 1rem;
+}
+
+header {
+    background-image: url('https://paxjah.art/banner.png');
+}
+
+section {
+}
+
+footer {
+    background-image: url('https://paxjah.art/banner.png');
+}
