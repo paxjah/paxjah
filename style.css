@@ -18,7 +18,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, .wrapper, header, main, footer {
+body, .wrapper, header, main, footer, .logos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,5 +80,30 @@ footer {
         background-position: center top;
         aspect-ratio: 245 / 128;
         margin-bottom: 1rem;
+    }
+}
+
+.logos {
+    flex-direction: row;
+    gap: 1rem;
+
+    .logo {
+        display: block;
+        aspect-ratio: 1 / 1;
+        height: 3rem;
+    }
+
+    .instagram {
+        background-image: url('https://paxjah.art/instagram.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .tiktok {
+        background-image: url('https://paxjah.art/tiktok.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 }
