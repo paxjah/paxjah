@@ -67,6 +67,10 @@ main {
 footer {
     font-size: 0.75rem;
 
+    * {
+        max-width: 100%;
+    }
+
     ::before {
         content: '';
         display: block;
