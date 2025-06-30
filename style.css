@@ -79,7 +79,6 @@ footer {
         background-size: contain;
         background-position: center top;
         aspect-ratio: 245 / 128;
-        height: 256px;
         margin-bottom: 1rem;
     }
 }
