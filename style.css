@@ -31,23 +31,19 @@ body,
 header,
 main,
 aside,
-aside p,
-footer {
+footer,
+.wrapper,
+.socials {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 2rem;
 }
 
 body {
     padding: 2rem;
     background-color: transparent;
-}
-
-aside p {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1rem;
 }
 
 footer {
@@ -62,12 +58,7 @@ footer {
 .wrapper {
     width: 765px;
     max-width: calc(100% - 4rem);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
     padding: 0 2rem;
-    align-items: center;
-    justify-content: center;
     background-color: #fff;
     border-radius: 1rem;
     box-shadow: 0 1px 1px 4px rgba(0, 0, 0, 0.1);
@@ -86,7 +77,14 @@ footer {
 .banner {
     display: block;
     aspect-ratio: 490 / 256;
-    height: 256px;
+    max-width: 100%;
+    height: auto;
+}
+
+.socials {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
 }
 
 .social {
