@@ -1,17 +1,17 @@
 
 * {
+    margin: 0;
     box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100vw;
-    margin: 0;
+    height: 100vh;
     min-height: 100vh;
+    width: 100vw;
     font-family: monospace, sans-serif;
     color: #020202;
     font-size: 1rem;
-    text-align: center;
     line-height: 1.5;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -19,7 +19,6 @@ body {
 }
 
 html {
-    height: 100vh;
     background-color: #ffffff;
     background-image: url('tile.png');
     background-repeat: repeat;
@@ -32,38 +31,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
-    height: auto;
 }
 
 header,
 main,
 footer {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
 }
 
 header {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 main {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 2rem;
 }
 
 footer {
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +91,10 @@ footer {
 .social {
     display: block;
     aspect-ratio: 1 / 1;
-    height: 3rem;
+}
+
+.logo {
+    min-height: 6rem;
 
     &.paxjah {
         background-image: url('logo.png');
@@ -102,6 +102,10 @@ footer {
         background-size: contain;
         background-position: center;
     }
+}
+
+.social {
+    min-height: 2rem;
 
     &.instagram {
         background-image: url('instagram.png');
@@ -116,4 +120,8 @@ footer {
         background-size: contain;
         background-position: center;
     }
+}
+
+.small {
+    font-size: 0.875rem;
 }
