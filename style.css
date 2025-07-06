@@ -18,41 +18,30 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, .wrapper, header, main, footer, .logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body, header, main, aside, footer {
     background-color: #fff;
-    text-align: center;
 }
 
 body {
-    height: 100%;
-    padding: 2rem;
-    background-image: url('https://paxjah.art/tile.png');
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 2rem;
+    background-image: url('tile.png');
     background-repeat: repeat;
     background-position: top left;
     background-size: initial;
 }
 
-.wrapper {
-    padding: 2rem 1rem 0;
-    width: 50%;
-    border-radius: 1rem;
-    box-shadow: 0 1px 1px 4px rgba(0, 0, 0, 0.1);
-
-    @media screen and (max-width: 768px) {
-        width: 100%;
-    }
-}
-
 header, main, footer {
-    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 header {
-    background-image: url(https://paxjah.art/logo.png);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url('logo.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -61,10 +50,13 @@ header {
 }
 
 main {
-    padding: 1rem 1rem 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
     font-size: 0.75rem;
 
     p, ::before {
@@ -74,7 +66,7 @@ footer {
     ::before {
         content: '';
         display: block;
-        background-image: url('https://paxjah.art/banner.png');
+        background-image: url('banner.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center top;
@@ -83,26 +75,20 @@ footer {
     }
 }
 
-.logos {
-    flex-direction: row;
-    gap: 1rem;
-    padding: 1rem;
+.logo {
+    display: block;
+    aspect-ratio: 1 / 1;
+    height: 3rem;
 
-    .logo {
-        display: block;
-        aspect-ratio: 1 / 1;
-        height: 3rem;
-    }
-
-    .instagram {
-        background-image: url('https://paxjah.art/instagram.png');
+    &.instagram {
+        background-image: url('instagram.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
     }
 
-    .tiktok {
-        background-image: url('https://paxjah.art/tiktok.png');
+    &.tiktok {
+        background-image: url('tiktok.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
