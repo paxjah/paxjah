@@ -18,19 +18,26 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, header, main, aside, footer {
+html, body, header, main, aside, footer {
     background-color: #fff;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 2rem;
+html {
+    height: 100%;
+    padding: 1.5rem;
     background-image: url('tile.png');
     background-repeat: repeat;
     background-position: top left;
     background-size: initial;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 header, main, footer {
