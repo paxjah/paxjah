@@ -38,11 +38,11 @@ footer,
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 body {
-    padding: 2rem;
+    padding: 2rem 0;
     background-color: transparent;
 }
 
