@@ -27,6 +27,7 @@ html {
 }
 
 body {
+    padding: 0 2rem;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -43,9 +44,13 @@ footer {
 header {
     grid-row-start: 2;
     grid-row-end: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 main {
@@ -75,7 +80,7 @@ footer {
     max-width: 765px;
     display: grid;
     grid-template-columns: 2rem auto 2rem;
-    grid-template-rows: 2rem auto 2rem;
+    grid-template-rows: 2rem auto auto auto 2rem;
     background-color: #fff;
     border-radius: 1rem;
     box-shadow: 0 1px 1px 4px rgba(0, 0, 0, 0.1);
@@ -85,23 +90,6 @@ footer {
     display: block;
     aspect-ratio: 490 / 256;
     height: 256px;
-}
-
-.logo,
-.social {
-    display: block;
-    aspect-ratio: 1 / 1;
-}
-
-.logo {
-    min-height: 6rem;
-
-    &.paxjah {
-        background-image: url('logo.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
 }
 
 .social {
