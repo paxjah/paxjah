@@ -9,23 +9,21 @@
 }
 
 html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     font-family: monospace, sans-serif;
     color: #020202;
     font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
     overflow-x: hidden;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 }
 
-html, body, header, main, aside, footer {
-    background-color: #fff;
-}
-
 html {
-    width: 100%;
-    height: 100%;
-    padding: 3rem;
+    background-color: #ffffff;
     background-image: url('tile.png');
     background-repeat: repeat;
     background-position: top left;
@@ -33,14 +31,18 @@ html {
 }
 
 body {
-    width: calc(100% - 2rem);
-    max-width: 1024px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 765px;
     display: grid;
-    padding: 1rem;
-    margin: 0 auto;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    grid-gap: 2rem;
+    grid-template-columns: 2rem auto 2rem;
+    grid-template-rows: 2rem auto auto 2rem;
+    background-color: #fff;
     border-radius: 1rem;
     box-shadow: 0 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
