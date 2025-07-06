@@ -9,7 +9,6 @@
 }
 
 html, body {
-    width: 100%;
     font-family: monospace, sans-serif;
     color: #020202;
     font-size: 1rem;
@@ -23,8 +22,8 @@ html, body, header, main, aside, footer {
 }
 
 html {
-    height: 100%;
-    padding: 1.5rem;
+    width: calc(100% - 4rem);
+    padding: 2rem;
     background-image: url('tile.png');
     background-repeat: repeat;
     background-position: top left;
@@ -32,6 +31,7 @@ html {
 }
 
 body {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
@@ -60,7 +60,7 @@ main {
     grid-row-start: 2;
     grid-row-end: 3;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 2rem;
