@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art by Paxjah: Pixel Dreams, Digital Delights & Cat-Mum Creativity</title>
+    <meta name="description" content="Explore the vibrant world of Paxjah's pixel art, digital freebies, and original acrylic paintings. A creative haven for art lovers and cat enthusiasts alike!">
+    <meta name="keywords" content="Paxjah, pixel art, digital art, acrylic paintings, art shop, digital downloads, cat mum, creative community">
+    <meta name="author" content="Paxjah">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Art by Paxjah: Pixel Dreams, Digital Delights & Cat-Mum Creativity">
+    <meta property="og:description" content="Explore the vibrant world of Paxjah's pixel art, digital freebies, and original acrylic paintings. A creative haven for art lovers and cat enthusiasts alike!">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paxjah.art/">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Art by Paxjah: Pixel Dreams, Digital Delights & Cat-Mum Creativity">
+    <meta name="twitter:description" content="Explore the vibrant world of Paxjah's pixel art, digital freebies, and original acrylic paintings. A creative haven for art lovers and cat enthusiasts alike!">
+    <meta name="twitter:image" content="logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="logo">
+                <span class="screen-reader-text">Art by Paxjah: Pixel Dreams, Digital Delights & Cat-Mum Creativity</span>
+            </h1>
+            <h2>Shop art by Paxjah</h2>
+        </header>
+        <main>
+            <section>
+                <p>All of my originl pieces, painted with Acrylics on camvas, card, and wood.</p>
+                <p>Message my on Instagram, TikTok, or WhatsApp to purchase!</p>
+            </section>
+            <section>
+            </section>
+            <aside>
+              <img src="qrcode.svg" width="6rem" height="auto" />
+            <aside>
+                <p class="socials">
+                    <a href="https://linktr.ee/paxjah" class="social linktree" target="_blank" rel="noopener noreferrer">
+                        <span class="screen-reader-text">Paxjah Linktree</span>
+                        My socials and art accounts on Linktree!
+                    </a>
+                </p>
+                <p>Join the Paxjah party on social media for pixel art, digital freebies, and a sprinkle of cat-mum magic! Follow me on <a href="https://www.instagram.com/paxjah/" target="_blank" rel="noopener noreferrer">Instagram</a> and <a href="https://tiktok.com/@paxjah" target="_blank" rel="noopener noreferrer">TikTok</a> for the latest updates and behind-the-scenes shenanigans.</p>
+                <p>Have a question, commission request, or just want to chat about pixels and paint? Reach out via <a href="mailto:meow@paxjah.art">email</a>!</p>
+            </aside>
+        </main>
+        <footer>
+            <img src="banner.png" alt="Paxjah isometric pixel art banner" width="490" height="256" class="banner">
+            <p>Copyright &copy; Paxjah 2000-2025, all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
