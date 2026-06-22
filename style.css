@@ -82,9 +82,7 @@ footer {
 }
 
 .socials {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1rem;
+    display: block;
 }
 
 .social {
