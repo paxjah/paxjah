@@ -89,7 +89,6 @@ footer {
 
 .social {
     display: block;
-    aspect-ratio: 1 / 1;
     min-height: 2rem;
 
     &.instagram {
