@@ -85,6 +85,12 @@ footer {
     display: block;
 }
 
+.qrcode {
+    display: block;
+    width: 6rem;
+    height: 5rem;
+}
+
 .social {
     display: block;
     min-height: 2rem;
