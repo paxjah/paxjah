@@ -92,9 +92,11 @@ section:has(figure) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
     
     figure {
         display: block;
+        width: calc(calc(100% - 2rem) / 2);
 
         img {
             display block;
@@ -122,7 +124,7 @@ section:has(figure) {
 .logo {
     display: block;
     aspect-ratio: 1 / 1;
-    min-height: 6rem;
+    height: 8rem;
     background-image: url('logo.png');
     background-repeat: no-repeat;
     background-size: contain;
