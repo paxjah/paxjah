@@ -45,7 +45,7 @@ body {
 }
 
 h2 {
-    padding: 1rem;
+    margin: 1rem;
 }
 
 footer {
@@ -95,14 +95,14 @@ section:has(figure) {
     gap: 2rem;
     
     figure {
-        display: block;
-        width: calc(calc(100% - 2rem) / 2);
-
         img {
             display block;
-            aspect-ratio: 1 / 1;
-            height: 300px;
-            width: auto;
+            float: left;
+            aspect-ratio: 1 / 2;
+        }
+
+        &:after {
+            clear: both;
         }
     }
 }
