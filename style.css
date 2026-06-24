@@ -88,15 +88,6 @@ footer {
     }
 }
 
-section:has(figure) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    
     figure {
         display: grid;
         grid-columns: 1fr 2rem 1fr;
@@ -126,7 +117,6 @@ section:has(figure) {
             grid-row-end: 4;
         }
     }
-}
 
 .screen-reader-text {
     position: absolute;
