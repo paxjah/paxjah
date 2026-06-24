@@ -104,11 +104,11 @@ section:has(figure) {
         img {
             display: block;
             width: 300px;
-            box-shadow: 0 0 3px 3px black;
+            box-shadow: 0 0 0 2px black;
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 1;
-            grid-row-end: 4;
+            grid-row-end: 2;
         }
 
         figcaption {
