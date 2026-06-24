@@ -55,6 +55,7 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        gap: 1rem;
 
         p, a, img {
             display: block;
