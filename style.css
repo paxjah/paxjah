@@ -32,8 +32,7 @@ header,
 main,
 aside,
 footer,
-.wrapper,
-.socials {
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +47,30 @@ body {
 
 footer {
     font-size: 0.875rem;
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        p, a, img {
+            display: block;
+            aspect-ratio: 1 / 1;
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+}
+
+figure {
+    display: block;
+
+    img {
+        display block;
+        aspect-ratio: 1 / 1;
+        height: 300px;
+        width: auto;
+    }
 }
 
 .screen-reader-text {
@@ -79,39 +102,4 @@ footer {
     aspect-ratio: 490 / 256;
     max-width: 100%;
     height: auto;
-}
-
-figure {
-    display: block;
-    aspect-ratio: 1 / 1;
-    width: 75%;
-}
-
-.socials {
-    display: block;
-}
-
-.qrcode {
-    display: block;
-    width: 6rem;
-    height: 5rem;
-}
-
-.social {
-    display: block;
-    min-height: 2rem;
-
-    &.instagram {
-        background-image: url('instagram.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-
-    &.tiktok {
-        background-image: url('tiktok.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
 }
