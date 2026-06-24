@@ -96,14 +96,14 @@ section:has(figure) {
     gap: 2rem;
     
     figure {
-        &:after {
-            clear: both;
-        }
+        display: grid;
+        grid-columns: 1fr 2rem 1fr;
+        grid-rows: auto;
+        grid-gap: 2rem;
         
         img {
             display block;
-            float: left;
-            margin: 1rem;
+            aspect-ration: 1 / 1;
         }
     }
 }
