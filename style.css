@@ -58,18 +58,47 @@ footer {
             aspect-ratio: 1 / 1;
             height: 3rem;
             width: 3rem;
+
+            &[href*="linktr"] {
+                background-image: url('linktree.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &[href*="tiktok"] {
+                background-image: url('tiktok.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            &[href*="instagram"] {
+                background-image: url('instagram.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
         }
     }
 }
 
-figure {
-    display: block;
+section.has(figure) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    figure {
+        display: block;
 
-    img {
-        display block;
-        aspect-ratio: 1 / 1;
-        height: 300px;
-        width: auto;
+        img {
+            display block;
+            aspect-ratio: 1 / 1;
+            height: 300px;
+            width: auto;
+        }
     }
 }
 
