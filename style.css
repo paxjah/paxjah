@@ -92,6 +92,7 @@ section:has(figure) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-basis: 100%;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -103,12 +104,12 @@ section:has(figure) {
         
         img {
             display: block;
-            width: 300px;
+            width: 100%;
             box-shadow: 0 0 0 2px black;
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 1;
-            grid-row-end: 2;
+            grid-row-end: 4;
         }
 
         figcaption {
