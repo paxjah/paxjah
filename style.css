@@ -98,12 +98,29 @@ section:has(figure) {
     figure {
         display: grid;
         grid-columns: 1fr 2rem 1fr;
-        grid-rows: auto;
+        grid-rows: 1fr 2rem 1fr;
         grid-gap: 2rem;
         
         img {
-            display block;
-            aspect-ration: 1 / 1;
+            display: flex;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        figcaption {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        p {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
         }
     }
 }
