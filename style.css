@@ -30,7 +30,6 @@ html {
 body,
 header,
 main,
-aside,
 footer,
 .wrapper {
     display: flex;
@@ -43,6 +42,10 @@ footer,
 body {
     padding: 2rem 0;
     background-color: transparent;
+}
+
+h2 {
+    padding: 1rem;
 }
 
 footer {
