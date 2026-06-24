@@ -86,7 +86,7 @@ footer {
     }
 }
 
-section.has(figure) {
+section:has(figure) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
