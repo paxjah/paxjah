@@ -103,7 +103,8 @@ section:has(figure) {
         
         img {
             display: block;
-            width: 40%;
+            width: 300px;
+            box-shadow: 0 0 3px 3px black;
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 1;
