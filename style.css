@@ -102,4 +102,5 @@ figure {
     aspect-ratio: 490 / 256;
     max-width: 100%;
     height: auto;
+    padding-bottom: 2rem;
 }
