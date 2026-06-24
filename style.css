@@ -81,6 +81,12 @@ footer {
     height: auto;
 }
 
+figure {
+    display: block;
+    aspect-ratio: 1 / 1;
+    width: 75%;
+}
+
 .socials {
     display: block;
 }
